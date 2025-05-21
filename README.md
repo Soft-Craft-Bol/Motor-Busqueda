@@ -25,8 +25,8 @@ Este proyecto es un motor de búsqueda especializado en juegos de mesa que utili
 
 1. **Clonar el repositorio**:
    ```bash
-   git clone https://github.com/tu-usuario/motor-busqueda-videojuegos.git
-   cd motor-busqueda-videojuegos
+   git clone https://github.com/Soft-Craft-Bol/Motor-Busqueda.git
+   cd Motor-Busqueda
    ```
 
 2. **Instalar dependencias**:
