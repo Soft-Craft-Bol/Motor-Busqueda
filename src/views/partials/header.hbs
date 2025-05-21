@@ -4,8 +4,13 @@
       <h1 class="h4 mb-0">
         <a href="/" class="text-white text-decoration-none">Buscador de Juegos de Mesa</a>
       </h1>
-      <div class="w-50">
-        {{> search-form }}
+
+      <!-- Agrupamos selector de idioma + formulario en un flex -->
+      <div class="d-flex align-items-center w-50">
+        {{> language-selector }}
+        <div class="flex-grow-1 ms-2">
+          {{> search-form }}
+        </div>
       </div>
     </div>
   </div>

@@ -1,34 +1,66 @@
-<div class="text-center py-5">
-  <h1 class="display-4 mb-4">Explora Juegos de Mesa en DBpedia</h1>
-  <p class="lead mb-5">Encuentra información sobre tus juegos favoritos: descripción, diseñadores, mecánicas y más.</p>
-  
-  <div class="row justify-content-center">
-    <div class="col-md-8">
-      {{> search-form }}
+{{!-- views/index.hbs --}}
+
+<div class="hero-section container mb-5 p-0 rounded overflow-hidden">
+  <div class="row g-0 align-items-center">
+    {{!-- Left column: Hero image --}}
+    <div class="col-md-6">
+      <img
+        src="/images/Risk-Sociales.jpg"
+        class="img-fluid w-100 h-100 object-fit-cover"
+        alt="Descubre nuevos juegos de mesa"
+      />
+      <div class="hero-overlay text-white d-flex flex-column justify-content-end p-4">
+        <h2 class="h4">Descubre Nuevos Juegos</h2>
+        <p class="mb-0">Explora miles de juegos de mesa</p>
+      </div>
+    </div>
+
+    {{!-- Right column: Title, description, search --}}
+    <div class="col-md-6 bg-white p-5">
+      <h1 class="mb-4">Buscador de Juegos de Mesa</h1>
+      <p class="mb-4 text-muted">
+        Bienvenido a nuestro buscador especializado en juegos de mesa. Utilizando la potencia de DBpedia,
+        te ofrecemos información detallada sobre miles de juegos, desde clásicos atemporales
+        hasta las últimas novedades del mundo lúdico.
+      </p>
+      <p class="mb-5 text-muted">
+        Encuentra juegos por nombre, categoría, número de jugadores o tiempo de juego.
+        Descubre nuevas experiencias para compartir con amigos y familia.
+      </p>
+
+      <div class="row">
+        <div class="col-md-10">
+          {{> search-form }}
+        </div>
+      </div>
     </div>
   </div>
-  
-  {{#if featuredGames.length}}
-    <section class="mt-5">
-      <h2 class="h4 mb-4">Juegos Destacados</h2>
-      <div class="row">
-        {{#each featuredGames}}
-          <div class="col-md-4 mb-4">
-            <div class="card h-100">
-              {{#if thumbnail}}
-                <img src="{{thumbnail}}" class="card-img-top" alt="{{name}}">
-              {{/if}}
-              <div class="card-body">
-                <h3 class="h5 card-title">{{name}}</h3>
-                <p class="card-text text-muted">{{truncate abstract 150}}</p>
-              </div>
-              <div class="card-footer bg-white">
-                <a href="/game/{{encodeURI uri}}" class="btn btn-sm btn-primary">Ver detalles</a>
-              </div>
+</div>
+
+{{!-- (Opcional) Juegos destacados debajo --}}
+{{#if featuredGames.length}}
+  <section class="container mb-5">
+    <h2 class="h4 mb-4">Juegos Destacados</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      {{#each featuredGames}}
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            {{#if thumbnail}}
+              <img src="{{thumbnail}}" class="card-img-top" alt="{{name}}">
+            {{/if}}
+            <div class="card-body">
+              <h3 class="h5 card-title">{{name}}</h3>
+              <p class="card-text text-muted">{{truncate abstract 150}}</p>
+            </div>
+            <div class="card-footer bg-white d-flex justify-content-between">
+              <a href="/game/{{encodeURI uri}}?lang={{../lang}}" class="btn btn-sm btn-primary">
+                {{#if (eq ../lang 'es')}}Ver detalles{{/if}}
+                {{#if (eq ../lang 'en')}}Details{{/if}}
+              </a>
             </div>
           </div>
-        {{/each}}
-      </div>
-    </section>
-  {{/if}}
-</div>
+        </div>
+      {{/each}}
+    </div>
+  </section>
+{{/if}}
