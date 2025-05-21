@@ -2,6 +2,7 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const config = require('./config/express');
 const routes = require('./routes/web.route');
+const path = require('path'); 
 //const apiRoutes = require('./routes/api');
 const languageMiddleware = require('./middleware/language');
 
