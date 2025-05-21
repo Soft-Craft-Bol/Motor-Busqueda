@@ -1,0 +1,16 @@
+<div class="dropdown">
+  <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
+    {{#if (eq lang 'en')}}English{{/if}}
+    {{#if (eq lang 'es')}}Español{{/if}}
+    {{#if (eq lang 'pt')}}Português{{/if}}
+    {{#if (eq lang 'de')}}Deutsch{{/if}}
+    {{#if (eq lang 'fr')}}Français{{/if}}
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="?lang=en">English</a></li>
+    <li><a class="dropdown-item" href="?lang=es">Español</a></li>
+    <li><a class="dropdown-item" href="?lang=pt">Português</a></li>
+    <li><a class="dropdown-item" href="?lang=de">Deutsch</a></li>
+    <li><a class="dropdown-item" href="?lang=fr">Français</a></li>
+  </ul>
+</div>

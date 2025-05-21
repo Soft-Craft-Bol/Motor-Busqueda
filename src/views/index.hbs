@@ -1,0 +1,34 @@
+<div class="text-center py-5">
+  <h1 class="display-4 mb-4">Explora Juegos de Mesa en DBpedia</h1>
+  <p class="lead mb-5">Encuentra información sobre tus juegos favoritos: descripción, diseñadores, mecánicas y más.</p>
+  
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      {{> search-form }}
+    </div>
+  </div>
+  
+  {{#if featuredGames.length}}
+    <section class="mt-5">
+      <h2 class="h4 mb-4">Juegos Destacados</h2>
+      <div class="row">
+        {{#each featuredGames}}
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              {{#if thumbnail}}
+                <img src="{{thumbnail}}" class="card-img-top" alt="{{name}}">
+              {{/if}}
+              <div class="card-body">
+                <h3 class="h5 card-title">{{name}}</h3>
+                <p class="card-text text-muted">{{truncate abstract 150}}</p>
+              </div>
+              <div class="card-footer bg-white">
+                <a href="/game/{{encodeURI uri}}" class="btn btn-sm btn-primary">Ver detalles</a>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </section>
+  {{/if}}
+</div>
