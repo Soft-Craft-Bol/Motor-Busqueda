@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:ex="http://ejemplo.org/juegos#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#publicadoPor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:range rdf:resource="http://ejemplo.org/juegos#Editorial"/>
+    <rdfs:label>publicadoPor</rdfs:label>
+    <rdfs:comment>Relaciona JuegoDeMesa con Editorial</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Carcassonne">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:label>Carcassonne</rdfs:label>
+    <ex:perteneceACategoria rdf:resource="http://ejemplo.org/juegos#Estrategia"/>
+    <ex:usaMecanica rdf:resource="http://ejemplo.org/juegos#GestiónDeRecursos"/>
+    <ex:tieneRegla rdf:resource="http://ejemplo.org/juegos#TurnosAlternos"/>
+    <ex:tieneComponente rdf:resource="http://ejemplo.org/juegos#Tablero"/>
+    <ex:tieneComponente rdf:resource="http://ejemplo.org/juegos#Cartas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#TerraformingMars">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:label>TerraformingMars</rdfs:label>
+    <ex:perteneceACategoria rdf:resource="http://ejemplo.org/juegos#Estrategia"/>
+    <ex:usaMecanica rdf:resource="http://ejemplo.org/juegos#GestiónDeRecursos"/>
+    <ex:tieneRegla rdf:resource="http://ejemplo.org/juegos#TurnosAlternos"/>
+    <ex:tieneComponente rdf:resource="http://ejemplo.org/juegos#Tablero"/>
+    <ex:tieneComponente rdf:resource="http://ejemplo.org/juegos#Cartas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador11">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador11</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Diseñador">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Diseñador</rdfs:label>
+    <rdfs:comment>Clase que representa diseñador en un juego de mesa.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Miniaturas">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Componente"/>
+    <rdfs:label>Miniaturas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador10">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador10</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#requiereJugadores">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:range rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>requiereJugadores</rdfs:label>
+    <rdfs:comment>Relaciona JuegoDeMesa con Jugador</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#JuegoDeMesa">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>JuegoDeMesa</rdfs:label>
+    <rdfs:comment>Clase que representa juegodemesa en un juego de mesa.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida5">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida1">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#tieneExpansion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:range rdf:resource="http://ejemplo.org/juegos#Expansion"/>
+    <rdfs:label>tieneExpansion</rdfs:label>
+    <rdfs:comment>Relaciona JuegoDeMesa con Expansion</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Tablero">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Componente"/>
+    <rdfs:label>Tablero</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador5">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador5</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#jugadoEn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <rdfs:range rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:label>jugadoEn</rdfs:label>
+    <rdfs:comment>Relaciona Partida con JuegoDeMesa</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#ControlDeÁreas">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Mecanica"/>
+    <rdfs:label>ControlDeÁreas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#EmpatePosible">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Regla"/>
+    <rdfs:label>EmpatePosible</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida2">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#tieneRegla">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:range rdf:resource="http://ejemplo.org/juegos#Regla"/>
+    <rdfs:label>tieneRegla</rdfs:label>
+    <rdfs:comment>Relaciona JuegoDeMesa con Regla</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida10">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador10"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador13">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador13</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Categoria">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Categoria</rdfs:label>
+    <rdfs:comment>Clase que representa categoria en un juego de mesa.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Expansion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Expansion</rdfs:label>
+    <rdfs:comment>Clase que representa expansion en un juego de mesa.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida4">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador4"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Temático">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Categoria"/>
+    <rdfs:label>Temático</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida3">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida14">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador14"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Estrategia">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Categoria"/>
+    <rdfs:label>Estrategia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida19">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador19"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador9">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador9</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Dominion">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:label>Dominion</rdfs:label>
+    <ex:perteneceACategoria rdf:resource="http://ejemplo.org/juegos#Estrategia"/>
+    <ex:usaMecanica rdf:resource="http://ejemplo.org/juegos#GestiónDeRecursos"/>
+    <ex:tieneRegla rdf:resource="http://ejemplo.org/juegos#TurnosAlternos"/>
+    <ex:tieneComponente rdf:resource="http://ejemplo.org/juegos#Tablero"/>
+    <ex:tieneComponente rdf:resource="http://ejemplo.org/juegos#Cartas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#perteneceACategoria">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:range rdf:resource="http://ejemplo.org/juegos#Categoria"/>
+    <rdfs:label>perteneceACategoria</rdfs:label>
+    <rdfs:comment>Relaciona JuegoDeMesa con Categoria</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#creadoPor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:range rdf:resource="http://ejemplo.org/juegos#Diseñador"/>
+    <rdfs:label>creadoPor</rdfs:label>
+    <rdfs:comment>Relaciona JuegoDeMesa con Diseñador</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#participadoPor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <rdfs:range rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>participadoPor</rdfs:label>
+    <rdfs:comment>Relaciona Partida con Jugador</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida11">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador11"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida12">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador12"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Cooperativo">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Categoria"/>
+    <rdfs:label>Cooperativo</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida8">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida17">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador17"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Dados">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Componente"/>
+    <rdfs:label>Dados</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida16">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador16"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Mecanica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Mecanica</rdfs:label>
+    <rdfs:comment>Clase que representa mecanica en un juego de mesa.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador12">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador12</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Abstracto">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Categoria"/>
+    <rdfs:label>Abstracto</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador17">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador17</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Regla">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Regla</rdfs:label>
+    <rdfs:comment>Clase que representa regla en un juego de mesa.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida15">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador15"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida20">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador20"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#ConstrucciónDeMazos">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Mecanica"/>
+    <rdfs:label>ConstrucciónDeMazos</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida7">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida6">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#usaMecanica">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:range rdf:resource="http://ejemplo.org/juegos#Mecanica"/>
+    <rdfs:label>usaMecanica</rdfs:label>
+    <rdfs:comment>Relaciona JuegoDeMesa con Mecanica</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Ajedrez">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:label>Ajedrez</rdfs:label>
+    <ex:perteneceACategoria rdf:resource="http://ejemplo.org/juegos#Estrategia"/>
+    <ex:usaMecanica rdf:resource="http://ejemplo.org/juegos#GestiónDeRecursos"/>
+    <ex:tieneRegla rdf:resource="http://ejemplo.org/juegos#TurnosAlternos"/>
+    <ex:tieneComponente rdf:resource="http://ejemplo.org/juegos#Tablero"/>
+    <ex:tieneComponente rdf:resource="http://ejemplo.org/juegos#Cartas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida18">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador18"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#tieneComponente">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:range rdf:resource="http://ejemplo.org/juegos#Componente"/>
+    <rdfs:label>tieneComponente</rdfs:label>
+    <rdfs:comment>Relaciona JuegoDeMesa con Componente</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Familiar">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Categoria"/>
+    <rdfs:label>Familiar</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#MovimientoPorCasillas">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Mecanica"/>
+    <rdfs:label>MovimientoPorCasillas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador2">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador6">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador6</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#ColocaciónDeLosetas">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Mecanica"/>
+    <rdfs:label>ColocaciónDeLosetas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador8">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador8</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Catan">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#JuegoDeMesa"/>
+    <rdfs:label>Catan</rdfs:label>
+    <ex:perteneceACategoria rdf:resource="http://ejemplo.org/juegos#Estrategia"/>
+    <ex:usaMecanica rdf:resource="http://ejemplo.org/juegos#GestiónDeRecursos"/>
+    <ex:tieneRegla rdf:resource="http://ejemplo.org/juegos#TurnosAlternos"/>
+    <ex:tieneComponente rdf:resource="http://ejemplo.org/juegos#Tablero"/>
+    <ex:tieneComponente rdf:resource="http://ejemplo.org/juegos#Cartas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Jugador</rdfs:label>
+    <rdfs:comment>Clase que representa jugador en un juego de mesa.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Partida</rdfs:label>
+    <rdfs:comment>Clase que representa partida en un juego de mesa.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Editorial">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Editorial</rdfs:label>
+    <rdfs:comment>Clase que representa editorial en un juego de mesa.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador1">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador15">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador15</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador19">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador19</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida13">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador13"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador16">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador16</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador3">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador3</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#TurnosAlternos">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Regla"/>
+    <rdfs:label>TurnosAlternos</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador18">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador18</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Componente">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Componente</rdfs:label>
+    <rdfs:comment>Clase que representa componente en un juego de mesa.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Fichas">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Componente"/>
+    <rdfs:label>Fichas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Partida9">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Partida"/>
+    <ex:jugadoEn rdf:resource="http://ejemplo.org/juegos#Catan"/>
+    <ex:participadoPor rdf:resource="http://ejemplo.org/juegos#Jugador9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador14">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador14</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador20">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador20</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador4">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador4</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Cartas">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Componente"/>
+    <rdfs:label>Cartas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#GestiónDeRecursos">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Mecanica"/>
+    <rdfs:label>GestiónDeRecursos</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#Jugador7">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Jugador"/>
+    <rdfs:label>Jugador7</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#CondicionVictoria">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Regla"/>
+    <rdfs:label>CondicionVictoria</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#JuegoPorRondas">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Regla"/>
+    <rdfs:label>JuegoPorRondas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://ejemplo.org/juegos#EliminacionJugadores">
+    <rdf:type rdf:resource="http://ejemplo.org/juegos#Regla"/>
+    <rdfs:label>EliminacionJugadores</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>
