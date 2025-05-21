@@ -6,45 +6,60 @@
   {{#if (eq lang 'fr')}}Résultats pour "{{query}}"{{/if}}
 </h1>
 
-{{> language-selector}}
-
 {{#if isEmpty}}
   <div class="alert alert-warning">
-    {{#if (eq lang 'es')}}No se encontraron videojuegos que coincidan con tu búsqueda.{{/if}}
-    {{#if (eq lang 'en')}}No video games found matching your search.{{/if}}
+    {{#if (eq lang 'es')}}No se encontraron juegos que coincidan con tu búsqueda.{{/if}}
+    {{#if (eq lang 'en')}}No games found matching your search.{{/if}}
     {{#if (eq lang 'pt')}}Nenhum jogo encontrado correspondente à sua pesquisa.{{/if}}
-    {{#if (eq lang 'de')}}Keine Videospiele gefunden, die Ihrer Suche entsprechen.{{/if}}
-    {{#if (eq lang 'fr')}}Aucun jeu vidéo trouvé correspondant à votre recherche.{{/if}}
+    {{#if (eq lang 'de')}}Keine Spiele gefunden, die Ihrer Suche entsprechen.{{/if}}
+    {{#if (eq lang 'fr')}}Aucun jeu trouvé correspondant à votre recherche.{{/if}}
   </div>
 {{else}}
-  <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="row g-4">
     {{#each games}}
-      <div class="col">
-        <div class="card h-100">
+      <div class="col-12 col-md-6">
+        <div class="card h-100 shadow-sm search-card">
+          
+          {{!-- Encabezado con el nombre del juego --}}
+          <div class="card-header bg-primary text-white py-2">
+            <h5 class="mb-0">{{name}}</h5>
+          </div>
+
+          {{!-- Imagen (si existe) --}}
           {{#if thumbnail}}
             <img src="{{thumbnail}}" class="card-img-top" alt="{{name}}">
           {{/if}}
+
+          {{!-- Cuerpo con descripción --}}
           <div class="card-body">
-            <h2 class="h5 card-title">{{name}}</h2>
-            {{#if developer}}<p class="text-muted small">{{developer}}</p>{{/if}}
-            <p class="card-text">{{truncate abstract 200}}</p>
+            {{#if developer}}
+              <p class="text-muted small mb-2">{{developer}}</p>
+            {{/if}}
+            <p class="card-text text-muted">{{truncate abstract 200}}</p>
           </div>
-          <div class="card-footer bg-white">
-            <div class="d-flex justify-content-between align-items-center">
-              <div class="badges">
-                {{#if releaseDate}}<span class="badge bg-secondary me-1">{{formatDate releaseDate}}</span>{{/if}}
-                {{#if genre}}<span class="badge bg-info me-1">{{genre}}</span>{{/if}}
-                {{#if platform}}<span class="badge bg-primary">{{platform}}</span>{{/if}}
-              </div>
-              <a href="/game/{{encodeURI uri}}?lang={{../lang}}" class="btn btn-sm btn-primary">
-                {{#if (eq ../lang 'es')}}Detalles{{/if}}
-                {{#if (eq ../lang 'en')}}Details{{/if}}
-                {{#if (eq ../lang 'pt')}}Detalhes{{/if}}
-                {{#if (eq ../lang 'de')}}Einzelheiten{{/if}}
-                {{#if (eq ../lang 'fr')}}Détails{{/if}}
-              </a>
+
+          {{!-- Pie con badges y botón --}}
+          <div class="card-footer bg-white d-flex justify-content-between align-items-center py-2">
+            <div class="badges">
+              {{#if releaseDate}}
+                <span class="badge bg-secondary me-1">{{formatDate releaseDate}}</span>
+              {{/if}}
+              {{#if genre}}
+                <span class="badge bg-info me-1">{{genre}}</span>
+              {{/if}}
+              {{#if platform}}
+                <span class="badge bg-primary">{{platform}}</span>
+              {{/if}}
             </div>
+            <a href="/game/{{encodeURI uri}}?lang={{../lang}}" class="btn btn-sm btn-outline-primary">
+              {{#if (eq ../lang 'es')}}Detalles{{/if}}
+              {{#if (eq ../lang 'en')}}Details{{/if}}
+              {{#if (eq ../lang 'pt')}}Detalhes{{/if}}
+              {{#if (eq ../lang 'de')}}Einzelheiten{{/if}}
+              {{#if (eq ../lang 'fr')}}Détails{{/if}}
+            </a>
           </div>
+
         </div>
       </div>
     {{/each}}

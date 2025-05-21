@@ -1,5 +1,11 @@
 <div class="dropdown">
-  <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
+  <button 
+    class="btn dropdown-toggle btn-outline-light" 
+    type="button" 
+    id="languageDropdown" 
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
     {{#if (eq lang 'en')}}English{{/if}}
     {{#if (eq lang 'es')}}Español{{/if}}
     {{#if (eq lang 'pt')}}Português{{/if}}

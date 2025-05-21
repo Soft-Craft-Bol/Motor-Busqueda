@@ -1,24 +1,98 @@
+/* Base adjustments */
 body {
   padding-top: 0;
 }
 
+/* General card hover effect (for cards without custom hover) */
 .card {
   transition: transform 0.2s;
 }
-
 .card:hover {
   transform: translateY(-5px);
 }
 
+/* Thumbnail images */
 .img-thumbnail {
   max-height: 200px;
   object-fit: contain;
 }
 
+/* Badge text weight */
 .badge {
   font-weight: normal;
 }
 
+/* Footer separator */
 footer {
   border-top: 1px solid #eee;
+}
+
+
+/* ============================= */
+/* Hero section styling          */
+/* ============================= */
+.hero-section {
+  background-color: #f8f9fa;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-section .lead {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+/* For two-column hero layout */
+.hero-section .row > .col-md-6 {
+  position: relative;
+  height: 400px; /* adjust height as desired */
+}
+
+/* Overlay text on image */
+.hero-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Utility for object-fit on img elements */
+.object-fit-cover {
+  object-fit: cover;
+}
+
+
+/* ============================= */
+/* Search-results card styling    */
+/* ============================= */
+.search-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-radius: 0.5rem;
+}
+
+.search-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+/* Header inside search-card */
+.search-card .card-header {
+  padding: 0.5rem 1rem;
+}
+.search-card .card-header h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Footer inside search-card */
+.search-card .card-footer {
+  padding: 0.5rem 1rem;
 }
