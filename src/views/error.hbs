@@ -1,13 +1,186 @@
-<div class="alert alert-danger">
-  <h1 class="h2">{{title}}</h1>
-  <p class="mb-0">{{message}}</p>
+<div class="error-page">
+  <div class="error-container">
+    <div class="error-illustration">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="120" height="120" fill="none" stroke="#ff6b6b" stroke-width="1.5">
+        <path stroke-linecap="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126zM12 15.75h.007v.008H12v-.008z"/>
+      </svg>
+    </div>
+    
+    <h1 class="error-title">¡Ups! Algo salió mal</h1>
+    <div class="error-message">
+  <p>Lo sentimos, para cambiar el idioma debes volver a la página de inicio.</p>
+  <p>Luego, realiza una nueva búsqueda para ver los resultados en el idioma seleccionado.</p>
 </div>
 
-{{#if error}}
-  <details class="mt-3">
-    <summary class="text-muted">Detalles técnicos</summary>
-    <pre class="bg-light p-3 small">{{error.stack}}</pre>
-  </details>
-{{/if}}
+    
+    <div class="error-actions">
+      <a href="/" class="btn-home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+        </svg>
+        Volver al inicio
+      </a>
+     
+    </div>
+    
+    <div class="error-suggestion">
+      <p class="suggestion-text">Mientras tanto, puedes:</p>
+      <ul class="suggestion-list">
+        <li>Intentar refrescar la página</li>
+        <li>Verificar tu conexión a internet</li>
+        <li>Volver a intentar más tarde</li>
+      </ul>
+    </div>
+  </div>
 
-<a href="/" class="btn btn-primary mt-3">Volver al inicio</a>
+  <style>
+    /* Estilos para la página de error */
+    .error-page {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+      padding: 2rem;
+      background-color: #f8f9fa;
+    }
+    
+    .error-container {
+      max-width: 600px;
+      text-align: center;
+      padding: 2.5rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      animation: fadeIn 0.6s ease;
+    }
+    
+    .error-illustration {
+      margin-bottom: 1.5rem;
+      animation: bounce 2s infinite;
+    }
+    
+    .error-title {
+      font-size: 2rem;
+      color: #dc3545;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+    
+    .error-message {
+      margin-bottom: 2rem;
+      color: #6c757d;
+      line-height: 1.6;
+    }
+    
+    .error-actions {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .btn-home, .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+    
+    .btn-home {
+      background-color: #0d6efd;
+      color: white;
+      border: 2px solid #0d6efd;
+    }
+    
+    .btn-home:hover {
+      background-color: #0b5ed7;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(13, 110, 253, 0.2);
+    }
+    
+    .btn-contact {
+      background-color: white;
+      color: #6c757d;
+      border: 2px solid #dee2e6;
+    }
+    
+    .btn-contact:hover {
+      background-color: #f8f9fa;
+      border-color: #adb5bd;
+      transform: translateY(-2px);
+    }
+    
+    .error-suggestion {
+      background-color: #f8f9fa;
+      padding: 1.25rem;
+      border-radius: 8px;
+      text-align: left;
+    }
+    
+    .suggestion-text {
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+      color: #495057;
+    }
+    
+    .suggestion-list {
+      padding-left: 1.25rem;
+      color: #6c757d;
+      margin-bottom: 0;
+    }
+    
+    .suggestion-list li {
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Animaciones */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+      }
+      40% {
+        transform: translateY(-20px);
+      }
+      60% {
+        transform: translateY(-10px);
+      }
+    }
+    
+    /* Responsividad */
+    @media (max-width: 576px) {
+      .error-container {
+        padding: 1.5rem;
+      }
+      
+      .error-title {
+        font-size: 1.5rem;
+      }
+      
+      .error-actions {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      
+      .btn-home, .btn-contact {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+</div>

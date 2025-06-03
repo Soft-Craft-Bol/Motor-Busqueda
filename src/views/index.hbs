@@ -1,66 +1,408 @@
-{{!-- views/index.hbs --}}
-
-<div class="hero-section container mb-5 p-0 rounded overflow-hidden">
-  <div class="row g-0 align-items-center">
-    {{!-- Left column: Hero image --}}
-    <div class="col-md-6">
-      <img
-        src="/images/Risk-Sociales.jpg"
-        class="img-fluid w-100 h-100 object-fit-cover"
-        alt="Descubre nuevos juegos de mesa"
-      />
-      <div class="hero-overlay text-white d-flex flex-column justify-content-end p-4">
-        <h2 class="h4">Descubre Nuevos Juegos</h2>
-        <p class="mb-0">Explora miles de juegos de mesa</p>
+<div class="hero-section">
+  <div class="hero-container container-fluid p-0">
+    <div class="row g-0 align-items-stretch">
+      <!-- Columna de imagen (izquierda en desktop, arriba en móvil) -->
+      <div class="col-lg-6 hero-image-col">
+        <div class="hero-image-wrapper">
+          <img
+            src="/images/juegos.jpg"
+            class="hero-image"
+            alt="Descubre nuevos juegos de mesa"
+            loading="lazy"
+          />
+          <div class="hero-overlay">
+            <div class="overlay-content">
+              <h2 class="hero-subtitle">Descubre Nuevos Juegos</h2>
+              <p class="hero-text">Explora miles de juegos de mesa</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    {{!-- Right column: Title, description, search --}}
-    <div class="col-md-6 bg-white p-5">
-      <h1 class="mb-4">Buscador de Juegos de Mesa</h1>
-      <p class="mb-4 text-muted">
-        Bienvenido a nuestro buscador especializado en juegos de mesa. Utilizando la potencia de DBpedia,
-        te ofrecemos información detallada sobre miles de juegos, desde clásicos atemporales
-        hasta las últimas novedades del mundo lúdico.
-      </p>
-      <p class="mb-5 text-muted">
-        Encuentra juegos por nombre, categoría, número de jugadores o tiempo de juego.
-        Descubre nuevas experiencias para compartir con amigos y familia.
-      </p>
-
-      <div class="row">
-        <div class="col-md-10">
-          {{> search-form }}
+      <!-- Columna de contenido (derecha en desktop, abajo en móvil) -->
+      <div class="col-lg-6 hero-content-col">
+        <div class="hero-content">
+          <h1 class="hero-title">Buscador de Juegos de Mesa</h1>
+          <div class="hero-description">
+            <p>
+              Bienvenido a nuestro buscador especializado en juegos de mesa. Utilizando la potencia de DBpedia,
+              te ofrecemos información detallada sobre miles de juegos, desde clásicos atemporales
+              hasta las últimas novedades del mundo lúdico.
+            </p>
+            <p>
+              Encuentra juegos por nombre, categoría, número de jugadores o tiempo de juego.
+              Descubre nuevas experiencias para compartir con amigos y familia.
+            </p>
+          </div>
+          
+          <div class="hero-search">
+            {{> search-form }}
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <style>
+    /* Estilos base para la hero section */
+    .hero-section {
+      margin-bottom: 3rem;
+      overflow: hidden;
+    }
+    
+    .hero-container {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      background: #fff;
+    }
+    
+    /* Estilos para la columna de imagen */
+    .hero-image-col {
+      position: relative;
+      min-height: 400px;
+    }
+    
+    .hero-image-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .hero-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .hero-image-col:hover .hero-image {
+      transform: scale(1.03);
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 100%);
+      padding: 2rem;
+      color: white;
+      transition: all 0.3s ease;
+    }
+    
+    .overlay-content {
+      transform: translateY(20px);
+      transition: transform 0.4s ease;
+    }
+    
+    .hero-image-col:hover .overlay-content {
+      transform: translateY(0);
+    }
+    
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      opacity: 0;
+      transition: opacity 0.3s ease 0.1s;
+    }
+    
+    .hero-text {
+      opacity: 0;
+      transition: opacity 0.3s ease 0.2s;
+    }
+    
+    .hero-image-col:hover .hero-subtitle,
+    .hero-image-col:hover .hero-text {
+      opacity: 1;
+    }
+    
+    /* Estilos para la columna de contenido */
+    .hero-content-col {
+      display: flex;
+      align-items: center;
+      padding: 3rem;
+      background: #fff;
+    }
+    
+    .hero-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .hero-title {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #2c3e50;
+      display: inline-block;
+    }
+    
+    .hero-title::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #3498db, #9b59b6);
+      border-radius: 2px;
+    }
+    
+    .hero-description p {
+      color: #7f8c8d;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    
+    .hero-search {
+      margin-top: 2rem;
+      animation: fadeInUp 0.5s ease 0.3s both;
+    }
+    
+    /* Animaciones */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Responsividad */
+    @media (max-width: 992px) {
+      .hero-image-col,
+      .hero-content-col {
+        min-height: auto;
+      }
+      
+      .hero-content-col {
+        padding: 2rem;
+      }
+      
+      .hero-title {
+        font-size: 2rem;
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .hero-container {
+        border-radius: 0;
+      }
+      
+      .hero-image-col {
+        order: 1;
+        min-height: 300px;
+      }
+      
+      .hero-content-col {
+        order: 2;
+        padding: 1.5rem;
+      }
+      
+      .hero-title {
+        font-size: 1.8rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      width: 100%;
+      display: block;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #f1f1f1;
+      margin-bottom: 1.5rem;
+      padding-bottom: 15px;
+      margin-top: 1rem;
+    }
+      
+      .hero-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -2px;
+      }
+      
+      .hero-description p {
+        text-align: center;
+      }
+      
+      .hero-search {
+        margin-top: 1.5rem;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      .hero-subtitle {
+        font-size: 1.2rem;
+      }
+      
+      .hero-overlay {
+        padding: 1rem;
+      }
+    }
+  </style>
 </div>
 
-{{!-- (Opcional) Juegos destacados debajo --}}
+<!-- Sección de juegos destacados -->
 {{#if featuredGames.length}}
-  <section class="container mb-5">
-    <h2 class="h4 mb-4">Juegos Destacados</h2>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      {{#each featuredGames}}
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            {{#if thumbnail}}
-              <img src="{{thumbnail}}" class="card-img-top" alt="{{name}}">
-            {{/if}}
-            <div class="card-body">
-              <h3 class="h5 card-title">{{name}}</h3>
-              <p class="card-text text-muted">{{truncate abstract 150}}</p>
-            </div>
-            <div class="card-footer bg-white d-flex justify-content-between">
-              <a href="/game/{{encodeURI uri}}?lang={{../lang}}" class="btn btn-sm btn-primary">
-                {{#if (eq ../lang 'es')}}Ver detalles{{/if}}
-                {{#if (eq ../lang 'en')}}Details{{/if}}
-              </a>
+  <section class="featured-games">
+    <div class="container">
+      <h2 class="section-title">Juegos Destacados</h2>
+      <div class="games-grid">
+        {{#each featuredGames}}
+          <div class="game-card">
+            <div class="card-inner">
+              {{#if thumbnail}}
+                <div class="card-image">
+                  <img src="{{thumbnail}}" class="game-thumbnail" alt="{{name}}" loading="lazy">
+                </div>
+              {{/if}}
+              <div class="card-body">
+                <h3 class="game-title">{{name}}</h3>
+                <p class="game-description">{{truncate abstract 150}}</p>
+              </div>
+              <div class="card-footer">
+                <a href="/game/{{encodeURI uri}}?lang={{../lang}}" class="btn-details">
+                  {{#if (eq ../lang 'es')}}Ver detalles{{/if}}
+                  {{#if (eq ../lang 'en')}}Details{{/if}}
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      {{/each}}
+        {{/each}}
+      </div>
     </div>
+
+    <style>
+      /* Estilos para juegos destacados */
+      .featured-games {
+        padding: 3rem 0;
+      }
+      
+      .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        color: #2c3e50;
+        position: relative;
+        padding-bottom: 15px;
+      }
+      
+      .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 3px;
+        background: linear-gradient(90deg, #3498db, #9b59b6);
+      }
+      
+      .games-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+      
+      .game-card {
+        perspective: 1000px;
+      }
+      
+      .card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+      }
+      
+      .game-card:hover .card-inner {
+        transform: translateY(-10px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+      }
+      
+      .card-image {
+        height: 200px;
+        overflow: hidden;
+      }
+      
+      .game-thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+      
+      .game-card:hover .game-thumbnail {
+        transform: scale(1.05);
+      }
+      
+      .card-body {
+        padding: 1.5rem;
+      }
+      
+      .game-title {
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+        color: #2c3e50;
+      }
+      
+      .game-description {
+        color: #7f8c8d;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+      }
+      
+      .card-footer {
+        padding: 1rem 1.5rem;
+        background: #f9f9f9;
+        text-align: right;
+      }
+      
+      .btn-details {
+        display: inline-block;
+        padding: 0.5rem 1.25rem;
+        background: linear-gradient(135deg, #3498db, #9b59b6);
+        color: white;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      .btn-details:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(135deg, #2980b9, #8e44ad);
+      }
+      
+      /* Responsividad */
+      @media (max-width: 768px) {
+        .games-grid {
+          grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .section-title {
+          font-size: 1.5rem;
+        }
+        
+        .featured-games {
+          padding: 2rem 0;
+        }
+        
+        .games-grid {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+      }
+    </style>
   </section>
 {{/if}}

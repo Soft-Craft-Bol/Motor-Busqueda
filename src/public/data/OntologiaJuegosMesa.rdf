@@ -1,0 +1,612 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17/"
+     xml:base="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#dirigidoA -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#dirigidoA">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edadObjetivo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edadObjetivo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#esTipo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#esTipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cognitiva"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#competitiva"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cooperativa"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#inlcuyeElemento -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#inlcuyeElemento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_fisico"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_narrativo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#recomendadoPara -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#recomendadoPara">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#seJuegaCon -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#seJuegaCon">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tieneComponente -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tieneComponente">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#usaMecanica -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#usaMecanica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#ambientacion_temporal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#ambientacion_temporal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_narrativo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#apropiado_para_fiesta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#apropiado_para_fiesta">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#contexto_social"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cantidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cantidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cantidad_equipo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cantidad_equipo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#colaboracion_total -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#colaboracion_total">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cooperativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#color_principal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#color_principal">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_fisico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_por_turno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_por_turno">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#es_adecuado_para_escuela -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#es_adecuado_para_escuela">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#es_adecuado_para_fiestas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#es_adecuado_para_fiestas">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#es_historia_real -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#es_historia_real">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_narrativo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#es_reemplazable -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#es_reemplazable">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#grado_competencia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#grado_competencia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#hay_puntuacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#hay_puntuacion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#competitiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#interaccion_social -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#interaccion_social">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#maxima -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#maxima">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#maximo_jugadores -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#maximo_jugadores">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#minima -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#minima">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_competencia -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_competencia">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#competitiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_dificultad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_dificultad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_educativo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_educativo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_formalidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_formalidad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#contexto_social"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_interaccion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_interaccion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#estilo_interaccion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_razonamiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_razonamiento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cognitiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#objetivo_comun -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#objetivo_comun">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cooperativa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#optimo_recomendado -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#optimo_recomendado">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#peso -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#peso">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_fisico"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#rango_edad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#rango_edad">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#requiere_estrategia_mental -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#requiere_estrategia_mental">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#requiere_habilidad_fisica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#requiere_habilidad_fisica">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#requiere_memoria -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#requiere_memoria">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cognitiva"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tamanio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tamanio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tema_narrativo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tema_narrativo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_narrativo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tiempo_espera_promedio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tiempo_espera_promedio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_interaccion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_interaccion">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#estilo_interaccion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_material -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_material">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cognitiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cognitiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#competitiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#competitiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#contexto_social -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#contexto_social">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cooperativa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cooperativa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_fisico -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_fisico">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_narrativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_narrativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#estilo_interaccion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#estilo_interaccion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

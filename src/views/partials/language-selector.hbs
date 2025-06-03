@@ -1,4 +1,4 @@
-<div class="dropdown">
+<div class="dropdown language-selector">
   <button 
     class="btn dropdown-toggle btn-outline-light" 
     type="button" 
@@ -6,17 +6,131 @@
     data-bs-toggle="dropdown"
     aria-expanded="false"
   >
-    {{#if (eq lang 'en')}}English{{/if}}
-    {{#if (eq lang 'es')}}Español{{/if}}
-    {{#if (eq lang 'pt')}}Português{{/if}}
-    {{#if (eq lang 'de')}}Deutsch{{/if}}
-    {{#if (eq lang 'fr')}}Français{{/if}}
+    <span class="language-option">
+      {{#if (eq lang 'en')}}<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="24" height="12" class="flag-icon">
+  <clipPath id="s">
+    <path d="M0,0 v30 h60 v-30 z"/>
+  </clipPath>
+  <clipPath id="t">
+    <path d="M30,15 h30 v15 z v-15 h-30 z M0,15 h30 v15 z v-15 h-30 z"/>
+  </clipPath>
+  <g clip-path="url(#s)">
+    <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#c8102e" stroke-width="4" clip-path="url(#t)"/>
+    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+    <path d="M30,0 v30 M0,15 h60" stroke="#c8102e" stroke-width="6"/>
+  </g>
+</svg> English{{/if}}
+      {{#if (eq lang 'es')}}<svg class="flag-icon" viewBox="0 0 640 480"><rect width="640" height="160" fill="#c60b1e" y="0"/><rect width="640" height="160" fill="#ffc400" y="160"/><rect width="640" height="160" fill="#c60b1e" y="320"/></svg> Español{{/if}}
+      {{#if (eq lang 'pt')}}<svg class="flag-icon" viewBox="0 0 640 480"><rect width="640" height="480" fill="#046a38"/><rect width="640" height="320" y="80" fill="#da291c"/><circle cx="220" cy="240" r="95" fill="#ffed00"/><circle cx="220" cy="240" r="60" fill="#002d72"/><path fill="#fff" d="M220 240a20 20 0 1 1-40 0 20 20 0 0 1 40 0z"/></svg> Português{{/if}}
+      {{#if (eq lang 'de')}}<svg class="flag-icon" viewBox="0 0 640 480"><rect width="640" height="160" y="0" fill="#000"/><rect width="640" height="160" y="160" fill="#dd0000"/><rect width="640" height="160" y="320" fill="#ffce00"/></svg> Deutsch{{/if}}
+      {{#if (eq lang 'fr')}}<svg class="flag-icon" viewBox="0 0 640 480"><rect width="213.3" height="480" x="0" fill="#002395"/><rect width="213.3" height="480" x="213.3" fill="#fff"/><rect width="213.3" height="480" x="426.6" fill="#ed2939"/></svg> Français{{/if}}
+    </span>
+    <i class="bi bi-chevron-down dropdown-arrow"></i>
   </button>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="?lang=en">English</a></li>
-    <li><a class="dropdown-item" href="?lang=es">Español</a></li>
-    <li><a class="dropdown-item" href="?lang=pt">Português</a></li>
-    <li><a class="dropdown-item" href="?lang=de">Deutsch</a></li>
-    <li><a class="dropdown-item" href="?lang=fr">Français</a></li>
+    <li><a class="dropdown-item" href="?lang=en"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="24" height="12" class="flag-icon">
+  <clipPath id="s">
+    <path d="M0,0 v30 h60 v-30 z"/>
+  </clipPath>
+  <clipPath id="t">
+    <path d="M30,15 h30 v15 z v-15 h-30 z M0,15 h30 v15 z v-15 h-30 z"/>
+  </clipPath>
+  <g clip-path="url(#s)">
+    <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#c8102e" stroke-width="4" clip-path="url(#t)"/>
+    <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+    <path d="M30,0 v30 M0,15 h60" stroke="#c8102e" stroke-width="6"/>
+  </g>
+</svg>
+ English</a></li>
+    <li><a class="dropdown-item" href="?lang=es"><svg class="flag-icon" viewBox="0 0 640 480"><rect width="640" height="160" fill="#c60b1e" y="0"/><rect width="640" height="160" fill="#ffc400" y="160"/><rect width="640" height="160" fill="#c60b1e" y="320"/></svg> Español</a></li>
+    <li><a class="dropdown-item" href="?lang=pt"><svg class="flag-icon" viewBox="0 0 640 480"><rect width="640" height="480" fill="#046a38"/><rect width="640" height="320" y="80" fill="#da291c"/><circle cx="220" cy="240" r="95" fill="#ffed00"/><circle cx="220" cy="240" r="60" fill="#002d72"/><path fill="#fff" d="M220 240a20 20 0 1 1-40 0 20 20 0 0 1 40 0z"/></svg> Português</a></li>
+    <li><a class="dropdown-item" href="?lang=de"><svg class="flag-icon" viewBox="0 0 640 480"><rect width="640" height="160" y="0" fill="#000"/><rect width="640" height="160" y="160" fill="#dd0000"/><rect width="640" height="160" y="320" fill="#ffce00"/></svg> Deutsch</a></li>
+    <li><a class="dropdown-item" href="?lang=fr"><svg class="flag-icon" viewBox="0 0 640 480"><rect width="213.3" height="480" x="0" fill="#002395"/><rect width="213.3" height="480" x="213.3" fill="#fff"/><rect width="213.3" height="480" x="426.6" fill="#ed2939"/></svg> Français</a></li>
   </ul>
+  
+  <style>
+    /* Estilos para el selector de idioma */
+    .language-selector {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+    
+    .language-selector .btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      border-width: 2px;
+    }
+    
+    .language-selector .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .language-selector .dropdown-toggle::after {
+      display: none;
+    }
+    
+    .dropdown-arrow {
+      transition: transform 0.3s ease;
+      font-size: 0.8rem;
+    }
+    
+    .language-selector.show .dropdown-arrow {
+      transform: rotate(180deg);
+    }
+    
+    .flag-icon {
+      width: 20px;
+      height: 15px;
+      margin-right: 8px;
+      border-radius: 2px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease;
+    }
+    
+    .dropdown-item:hover .flag-icon {
+      transform: scale(1.1);
+    }
+    
+    .dropdown-menu {
+      min-width: 180px;
+      border: none;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      animation: fadeInUp 0.3s ease;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    
+    .dropdown-item {
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      transition: all 0.2s ease;
+    }
+    
+    .dropdown-item:hover {
+      background-color: #f8f9fa;
+      transform: translateX(5px);
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </div>
