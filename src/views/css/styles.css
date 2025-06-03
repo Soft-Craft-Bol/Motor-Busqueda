@@ -1,98 +1,125 @@
-/* Base adjustments */
+:root {
+  --primary: #6d28d9;
+  --primary-light: #8b5cf6;
+  --primary-dark: #4c1d95;
+  --secondary: #f59e0b;
+  --dark: #1e293b;
+  --light: #f8fafc;
+  --gray: #94a3b8;
+  --gray-light: #e2e8f0;
+  --radius: 0.5rem;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --transition: all 0.2s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  padding-top: 0;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+  color: var(--dark);
+  background-color: var(--light);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-/* General card hover effect (for cards without custom hover) */
-.card {
-  transition: transform 0.2s;
-}
-.card:hover {
-  transform: translateY(-5px);
-}
-
-/* Thumbnail images */
-.img-thumbnail {
-  max-height: 200px;
-  object-fit: contain;
-}
-
-/* Badge text weight */
-.badge {
-  font-weight: normal;
-}
-
-/* Footer separator */
-footer {
-  border-top: 1px solid #eee;
-}
-
-
-/* ============================= */
-/* Hero section styling          */
-/* ============================= */
-.hero-section {
-  background-color: #f8f9fa;
-}
-
-.hero-img {
+/* Layout Styles */
+.container {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  max-width: 1200px;
+  padding: 0 1.5rem;
+  margin: 0 auto;
 }
 
-.hero-section .lead {
-  max-width: 700px;
-  margin: 0 auto 1.5rem;
-}
-
-/* For two-column hero layout */
-.hero-section .row > .col-md-6 {
+.main-content {
+  flex: 1;
+  padding: 2rem 0;
   position: relative;
-  height: 400px; /* adjust height as desired */
 }
 
-/* Overlay text on image */
-.hero-overlay {
-  position: absolute;
-  bottom: 0;
+/* Decorative elements */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  padding: 1rem;
+  height: 100%;
+  background-image: 
+    radial-gradient(at 80% 0%, hsla(189, 100%, 56%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(355, 100%, 93%, 0.1) 0px, transparent 50%);
+  z-index: -1;
+  pointer-events: none;
 }
 
-/* Utility for object-fit on img elements */
-.object-fit-cover {
-  object-fit: cover;
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
 }
 
-
-/* ============================= */
-/* Search-results card styling    */
-/* ============================= */
-.search-card {
-  transition: transform 0.2s, box-shadow 0.2s;
-  border-radius: 0.5rem;
+::-webkit-scrollbar-track {
+  background: var(--gray-light);
 }
 
-.search-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+::-webkit-scrollbar-thumb {
+  background: var(--primary-light);
+  border-radius: 4px;
 }
 
-/* Header inside search-card */
-.search-card .card-header {
-  padding: 0.5rem 1rem;
-}
-.search-card .card-header h5 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0;
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
 }
 
-/* Footer inside search-card */
-.search-card .card-footer {
-  padding: 0.5rem 1rem;
+/* Utility Classes */
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-primary {
+  background-color: var(--primary);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.icon-sm {
+  width: 20px;
+  height: 20px;
+}
+
+.icon-lg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .main-content {
+    padding: 1.5rem 0;
+  }
 }

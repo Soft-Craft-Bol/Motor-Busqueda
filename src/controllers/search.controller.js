@@ -21,12 +21,16 @@ exports.search = async (req, res) => {
       );
     }
     
+    // Para depuración - ver todos los datos recibidos
+    console.log("Full results data:", JSON.stringify(results, null, 2));
+    
     res.render('search-results', { 
       title: `Results for "${q}"`,
       query: q,
       games: results,
       isEmpty: results.length === 0,
-      lang
+      lang,
+      showDetails: true // Nueva variable para la vista
     });
   } catch (error) {
     res.status(500).render('error', { 

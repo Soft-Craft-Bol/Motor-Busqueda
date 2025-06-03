@@ -1,8 +1,8 @@
-<header class="bg-dark text-white p-3 mb-4">
+<header class="bg-dark text-white p-3 mb-4 navbar-improved">
   <div class="container">
     <div class="d-flex justify-content-between align-items-center">
       <h1 class="h4 mb-0">
-        <a href="/" class="text-white text-decoration-none">Buscador de Juegos de Mesa</a>
+        <a href="/" class="text-white text-decoration-none logo-link">Buscador de Juegos de Mesa</a>
       </h1>
 
       <!-- Agrupamos selector de idioma + formulario en un flex -->
@@ -14,4 +14,88 @@
       </div>
     </div>
   </div>
+  
+  <style>
+    /* Estilos para el navbar mejorado */
+    .navbar-improved {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%) !important;
+      transition: all 0.3s ease;
+    }
+    
+    .navbar-improved::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #ff6b6b, transparent);
+      transition: 0.5s;
+    }
+    
+    .navbar-improved:hover::before {
+      left: 100%;
+    }
+    
+    .logo-link {
+      position: relative;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      padding: 5px 0;
+    }
+    
+    .logo-link:hover {
+      color: #ff6b6b !important;
+      transform: translateY(-2px);
+    }
+    
+    .logo-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ff6b6b;
+      transition: width 0.3s ease;
+    }
+    
+    .logo-link:hover::after {
+      width: 100%;
+    }
+    
+    /* Animación para los elementos del navbar */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .navbar-improved .container > div > * {
+      animation: fadeIn 0.5s ease forwards;
+    }
+    
+    /* Efecto para los elementos interactivos */
+    .navbar-improved .btn, 
+    .navbar-improved .form-control {
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar-improved .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    
+    .navbar-improved .form-control:focus {
+      box-shadow: 0 0 0 0.25rem rgba(255, 107, 107, 0.25);
+      border-color: #ff6b6b;
+    }
+    
+    /* Efecto de hover para el contenedor completo */
+    .navbar-improved:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    }
+  </style>
 </header>

@@ -2,6 +2,7 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const config = require('./config/express');
 const routes = require('./routes/web.route');
+const rdfRoutes = require('./routes/rdf.routes'); // Importar rutas RDF
 const path = require('path'); 
 //const apiRoutes = require('./routes/api');
 const languageMiddleware = require('./middleware/language');
@@ -18,6 +19,7 @@ config(app);
 
 // Rutas
 app.use('/', routes);
+app.use('/rdf', rdfRoutes); // Usar rutas RDF
 //app.use('/api', apiRoutes);
 
 // Iniciar servidor
