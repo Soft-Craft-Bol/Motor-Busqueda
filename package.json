@@ -21,6 +21,15 @@
     "fs": "^0.0.1-security",
     "n3": "^1.26.0",
     "natural": "^5.2.3",
-    "rdflib": "^2.2.37"
+    "rdf-ext": "^2.5.2",
+    "rdf-parse": "^4.0.0",
+    "rdf-parser-rdfxml": "^0.3.1",
+    "rdf-serialize": "^4.0.1",
+    "rdf-utils-fs": "^3.0.1",
+    "rdflib": "^2.2.37",
+    "rdfxml-streaming-parser": "^3.0.1",
+    "sparql-http-client": "^3.0.1",
+    "streamify-string": "^1.0.1",
+    "streaming-iterables": "^8.0.1"
   }
 }
