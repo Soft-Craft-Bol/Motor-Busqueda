@@ -5,7 +5,8 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-17="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17"/>
     
 
@@ -604,6 +605,242 @@
     <owl:Class rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1935</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Se el rey de la ciudad dominando todas las avenidas y calles dentro del tablero</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">180</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>Monopolio</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2015</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego de palabras y deducción en el que los jugadores intentan adivinar identidades secretas.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">15</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>Codenames</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:descripcion>Juego de estrategia por turnos donde dos jugadores intentan dar jaque mate al rey del oponente.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">6</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1475</untitled-ontology-17:nombre>
+        <untitled-ontology-17:nombre>Ajedrez</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1870</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego de recorrido basado en el azar donde los jugadores suben escaleras y bajan por serpientes.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>Serpientes y Escaleras</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1896</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego de carrera en el que los jugadores mueven sus fichas por un tablero hasta llegar al centro.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>Ludo</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1100</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego de estrategia entre dos jugadores que deben capturar o bloquear todas las piezas del oponente.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>Damas</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego tipo party game donde los jugadores deben adivinar palabras o completar retos dentro de un minuto. Ideal para equipos y fiestas.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>60 segundos</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1995</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego de estrategia y comercio donde los jugadores colonizan una isla rica en recursos.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">75</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>Catan</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego de colocación de losetas donde los jugadores construyen caminos, ciudades y claustros.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">35</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>Carcassonne</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego cooperativo en el que los jugadores trabajan juntos para detener brotes de enfermedades globales.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>Pandemic</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2008</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego de imaginación y deducción basado en imágenes surrealistas y narraciones.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>Dixit</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2004</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego de rutas ferroviarias en el que los jugadores compiten por conectar ciudades de Norteamérica.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">45</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>Ticket to Ride</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2017</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego abstracto de colocación de mosaicos inspirado en los azulejos portugueses.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">40</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>Azul</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"></untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego de cartas y civilizaciones donde se construyen maravillas del mundo antiguo.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>7 Wonders</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa"/>
+        <untitled-ontology-17:anio_publicacion rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</untitled-ontology-17:anio_publicacion>
+        <untitled-ontology-17:descripcion>Juego de estrategia en el que los jugadores compiten como mercaderes de gemas.</untitled-ontology-17:descripcion>
+        <untitled-ontology-17:duracion_media rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</untitled-ontology-17:duracion_media>
+        <untitled-ontology-17:edad_recomendada rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</untitled-ontology-17:edad_recomendada>
+        <untitled-ontology-17:nombre>Splendor</untitled-ontology-17:nombre>
+        <untitled-ontology-17:numero_jugadores_maximo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</untitled-ontology-17:numero_jugadores_maximo>
+        <untitled-ontology-17:numero_jugadores_minimo rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</untitled-ontology-17:numero_jugadores_minimo>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 

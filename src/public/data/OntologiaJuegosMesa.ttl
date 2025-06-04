@@ -1,0 +1,298 @@
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17> a <http://www.w3.org/2002/07/owl#Ontology>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#dirigidoA> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edadObjetivo> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#esTipo> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cognitiva>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#competitiva>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cooperativa>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#inlcuyeElemento> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_fisico>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_narrativo>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#recomendadoPara> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#seJuegaCon> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tieneComponente> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#usaMecanica> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#ambientacion_temporal> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_narrativo>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#apropiado_para_fiesta> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#contexto_social>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cantidad> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cantidad_equipo> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#colaboracion_total> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cooperativa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#color_principal> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_fisico>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_por_turno> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#es_adecuado_para_escuela> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#es_adecuado_para_fiestas> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#es_historia_real> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_narrativo>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#es_reemplazable> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#grado_competencia> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#hay_puntuacion> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#competitiva>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#interaccion_social> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#maxima> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#maximo_jugadores> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#minima> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_competencia> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#competitiva>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_dificultad> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_educativo> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_formalidad> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#contexto_social>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_interaccion> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#estilo_interaccion>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nivel_razonamiento> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cognitiva>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#objetivo_comun> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cooperativa>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#optimo_recomendado> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#peso> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_fisico>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#rango_edad> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#requiere_estrategia_mental> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#requiere_habilidad_fisica> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#requiere_memoria> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cognitiva>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tamanio> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tema_narrativo> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_narrativo>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tiempo_espera_promedio> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_interaccion> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#estilo_interaccion>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_material> a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente>;
+    <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cognitiva> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#competitiva> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#contexto_social> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#cooperativa> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_fisico> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#elemento_narrativo> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#componente>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#estilo_interaccion> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa> a <http://www.w3.org/2002/07/owl#Class>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#mecanica> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#publico_objetivo> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#tipo_jugador> a <http://www.w3.org/2002/07/owl#Class>;
+    <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_1> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> "1935"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Se el rey de la ciudad dominando todas las avenidas y calles dentro del tablero";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "180"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> "10"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "Monopolio";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> "10"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> "4"^^<http://www.w3.org/2001/XMLSchema#decimal>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_10> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> 2015;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego de palabras y deducción en el que los jugadores intentan adivinar identidades secretas.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "15"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> 14;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "Codenames";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> 8;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> 2.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_11> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego de estrategia por turnos donde dos jugadores intentan dar jaque mate al rey del oponente.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "20"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> "6"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> 1475, "Ajedrez";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> "2"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> "2"^^<http://www.w3.org/2001/XMLSchema#decimal>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_12> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> 1870;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego de recorrido basado en el azar donde los jugadores suben escaleras y bajan por serpientes.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "20"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> "4"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "Serpientes y Escaleras";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> "4"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> "2"^^<http://www.w3.org/2001/XMLSchema#decimal>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_13> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> 1896;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego de carrera en el que los jugadores mueven sus fichas por un tablero hasta llegar al centro.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "30"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> 5;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "Ludo";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> 4;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> 2.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_14> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> 1100;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego de estrategia entre dos jugadores que deben capturar o bloquear todas las piezas del oponente.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "30"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> 6;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "Damas";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> 2;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> 2.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_15> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> 2012;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego tipo party game donde los jugadores deben adivinar palabras o completar retos dentro de un minuto. Ideal para equipos y fiestas.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "30"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> 10;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "60 segundos";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> 10;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> 4.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_2> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> "1995"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego de estrategia y comercio donde los jugadores colonizan una isla rica en recursos.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "75"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> 10;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "Catan";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> "4"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> "3"^^<http://www.w3.org/2001/XMLSchema#decimal>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_3> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> "2000"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego de colocación de losetas donde los jugadores construyen caminos, ciudades y claustros.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "35"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> "7"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "Carcassonne";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> "5"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> "2"^^<http://www.w3.org/2001/XMLSchema#decimal>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_4> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> 2008;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego cooperativo en el que los jugadores trabajan juntos para detener brotes de enfermedades globales.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "45"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> "8"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "Pandemic";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> 4;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> 2.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_5> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> "2008"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego de imaginación y deducción basado en imágenes surrealistas y narraciones.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "30"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> 8;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "Dixit";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> 6;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> 3.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_6> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> 2004;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego de rutas ferroviarias en el que los jugadores compiten por conectar ciudades de Norteamérica.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "45"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> "8"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "Ticket to Ride";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> "5"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> "2"^^<http://www.w3.org/2001/XMLSchema#decimal>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_7> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> "2017"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego abstracto de colocación de mosaicos inspirado en los azulejos portugueses.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "40"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> 8;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "Azul";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> "4"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> ""^^<http://www.w3.org/2001/XMLSchema#integer>.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_8> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> 2010;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego de cartas y civilizaciones donde se construyen maravillas del mundo antiguo.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> 30;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> 10;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "7 Wonders";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> 7;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> 3.
+<http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#Juego_9> a <http://www.w3.org/2002/07/owl#NamedIndividual>, <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#juego_de_mesa>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#anio_publicacion> 2014;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#descripcion> "Juego de estrategia en el que los jugadores compiten como mercaderes de gemas.";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#duracion_media> "30"^^<http://www.w3.org/2001/XMLSchema#decimal>;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#edad_recomendada> 10;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#nombre> "Splendor";
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_maximo> 4;
+    <http://www.semanticweb.org/adric/ontologies/2025/4/untitled-ontology-17#numero_jugadores_minimo> 2.
